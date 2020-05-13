@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, StatusBar } from "react-native";
+import { View, Text, StyleSheet, StatusBar, FlatList } from "react-native";
+//import { ListItem } from "react-native-elements";
 import PropTypes from "prop-types";
 import Data from "./Data";
 
@@ -25,6 +26,24 @@ export default function Bus({ info }) {
       <Text>
         도착예정: {info[0].predictTime1[0]}분({info[0].locationNo1[0]}
         정류장), {info[0].predictTime2[0]}분({info[0].locationNo2[0]}
+        정류장)
+      </Text>
+      <Text>{busOptions[info[1].routeId[0]].busName}</Text>
+      <Text>
+        도착예정: {info[1].predictTime1[0]}분({info[0].locationNo1[0]}
+        정류장), {info[1].predictTime2[0]}분({info[0].locationNo2[0]}
+        정류장)
+      </Text>
+      <Text>{busOptions[info[2].routeId[0]].busName}</Text>
+      <Text>
+        도착예정: {info[2].predictTime1[0]}분({info[0].locationNo1[0]}
+        정류장), {info[2].predictTime2[0]}분({info[0].locationNo2[0]}
+        정류장)
+      </Text>
+      <Text>{busOptions[info[3].routeId[0]].busName}</Text>
+      <Text>
+        도착예정: {info[3].predictTime1[0]}분({info[0].locationNo1[0]}
+        정류장), {info[3].predictTime2[0]}분({info[0].locationNo2[0]}
         정류장)
       </Text>
     </View>

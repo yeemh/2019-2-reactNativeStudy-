@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import { Alert } from "react-native";
 import Loading from "./Loading";
 import Bus from "./Bus";
-import Axios from "axios";
 
 const API_KEY =
-  "tSmCWfqzpKOoTFbjKnZdt%2BhrOLxUIM1L4H9pC6sl1E1mCz4SsW4kkTbSMD8deZYJdRQkHXpXmk6Az2are2xSrg%3D%3D";
+  "2%2FW2pIdFCMC09IZvmfZC1ycytaM4yK9KGBD7kn3VWbVhPdaQTkIk6Ftn%2FEGnnIDfTRqIk64mvAFr9S9ZBeheLw%3D%3D";
 const stationId = 228000710;
 const URL = `http://openapi.gbis.go.kr/ws/rest/busarrivalservice/station?serviceKey=${API_KEY}&stationId=${stationId}`;
 var parseString = require("react-native-xml2js").parseString;
